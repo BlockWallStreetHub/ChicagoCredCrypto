@@ -230,6 +230,7 @@ svg.ch{width:100%;height:auto;display:block;background:var(--panel);border:1px s
       <button class="tbtn" id="fsm" aria-label="Smaller text">A−</button>
       <button class="tbtn" id="fsp" aria-label="Bigger text">A+</button>
       <button class="tbtn" id="theme" aria-label="Switch light or dark">Light / Dark</button>
+      <a class="tbtn" href="part2.html" style="text-decoration:none">Part 2 →</a>
       <button class="tbtn gl" id="openG">Glossary</button>
     </div>
   </div>
@@ -1338,7 +1339,7 @@ const BWS_CERT={
       +'<p>completed <strong>'+this.esc(info.course)+'</strong>'+(footer?'<br>'+this.esc(footer):'')+'</p>'
       +this.tableHTML(rep)
       +'<p>Overall grade: <strong>'+rep.pct+'% ('+rep.letter+')</strong> · '+info.date+'</p></div>'
-      +'<div class="row"><button class="btn" onclick="window.print()">Print certificate</button></div>';
+      +'<div class="row"><button class="btn" onclick="window.print()">Print certificate</button> <a class="btn" href="part2.html">Continue to Part 2 →</a></div>';
   },
   async send(info,rep){
     const lines=rep.rows.map(r=>r.label+': '+r.score+'/'+r.total+' = '+r.pct+'% ('+r.letter+')').join('\n');
